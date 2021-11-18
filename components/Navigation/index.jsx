@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import ThemeSwitch from '../ThemeSwitch';
 
 import { navContainer, navSubContainer, navLink } from './Navigation.module.css';
 // ou import styles from './Navigation.module.css' --> aí eu usaria styles.navContainer e etc....
@@ -10,9 +11,10 @@ const Navigation = () => {
       <div className={ navSubContainer }>
         <Link href="/">
           <a className={ navLink }>
-            Your Name
+            Thomas Ravache
           </a>
         </Link>
+        <ThemeSwitch />
       </div>
     </div>
   );
