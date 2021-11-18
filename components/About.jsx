@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
-import minhaFoto from '../../public/foto-perfil-thomas.jpg';
-import styles from './About.module.css';
+import minhaFoto from '../public/foto-perfil-thomas.jpg';
+import styles from './tailwindStyles/aboutStyles';
 
 const About = () => {
   return (

@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { useTheme } from 'next-themes';
-import styles from './ThemeSwitch.module.css';
+import styles from './tailwindStyles/themeSwitchStyles';
 
 const ThemeSwitch = () => {
   const [mounted, setMounted] = useState(false);
-  const [theme, setTheme, resolvedTheme] = useTheme();
+  const { theme, setTheme, resolvedTheme } = useTheme();
 
   //Quando o componente estiver montado então a será mostrado o tema em questão
   useEffect(() => {

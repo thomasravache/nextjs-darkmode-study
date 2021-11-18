@@ -1,16 +1,16 @@
 import React from 'react';
 import Link from 'next/link';
-import ThemeSwitch from '../ThemeSwitch';
+import ThemeSwitch from './ThemeSwitch';
 
-import { navContainer, navSubContainer, navLink } from './Navigation.module.css';
+import styles from './tailwindStyles/navStyles';
 // ou import styles from './Navigation.module.css' --> aí eu usaria styles.navContainer e etc....
 
 const Navigation = () => {
   return (
-    <div className={ navContainer }>
-      <div className={ navSubContainer }>
+    <div className={ styles.navContainer }>
+      <div className={ styles.navSubContainer }>
         <Link href="/">
-          <a className={ navLink }>
+          <a className={ styles.navLink }>
             Thomas Ravache
           </a>
         </Link>
